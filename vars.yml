@@ -1,0 +1,12 @@
+shared:
+  box: generic/ubuntu2204
+  network: "192.168.56.1"
+  worker_count: 4
+
+control:
+  mem_size: 1024
+  cpus: 2
+ 
+worker:
+  mem_size: 1024
+  cpus: 2

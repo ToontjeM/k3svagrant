@@ -15,4 +15,6 @@ sudo k3s kubectl config view --raw > "$KUBECONFIG"
 chmod 600 "$KUBECONFIG"
 sudo chown -R vagrant:vagrant .kube
 
+echo "export KUBECONFIG=/home/vagrant/.kube/config" >> /home/vagrant/.bashrc
+
 k3s kubectl get nodes -o wide
